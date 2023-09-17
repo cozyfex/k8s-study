@@ -1,0 +1,12 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  name: review-mtls-destination
+spec:
+  host: reviews.default.svc.cluster.local
+  trafficPolicy:
+    tls:
+      mode: MUTUAL
+      clientCertificate: /my-client-cert.pem
+      privateKey: /client-private-key.pem
+      caCertificates: /root-ca-certs.pem

@@ -1,0 +1,11 @@
+apiVersion: security.istio.io/v1beta1
+kind: PeerAuthentication
+metadata:
+  name: example-workload-specific-peer-policy
+  namespace: book-info
+spec:
+  selector:
+    matchLabels:
+      app: reviews
+  mtls:
+    mode: STRICT

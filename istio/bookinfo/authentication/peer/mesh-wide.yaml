@@ -1,0 +1,8 @@
+apiVersion: security.istio.io/v1beta1
+kind: PeerAuthentication
+metadata:
+  name: example-mesh-wide-peer-policy
+  namespace: istio-system # For Mesh Wide Peer Policy
+spec:
+  mtls:
+    mode: STRICT
