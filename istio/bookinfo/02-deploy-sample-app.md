@@ -3,12 +3,12 @@
 ### Deploy bookinfo app
 
 ```shell
-kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml
+kubectl apply -f istio/samples/bookinfo/platform/kube/bookinfo.yaml
 ```
 
 ### Cleanup bookfino app
 
 ```shell
-./samples/bookinfo/platform/kube/cleanup.sh
+./istio/samples/bookinfo/platform/kube/cleanup.sh
 ```
 

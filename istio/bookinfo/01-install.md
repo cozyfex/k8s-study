@@ -33,7 +33,7 @@ kubectl label namespace default istio-injection=enabled
 ### Install Kiali, Grafana, Prometheus, Jagger, Loki
 
 ```shell
-kubectl apply -f samples/addons
+kubectl apply -f istio/samples/addons
 ```
 
 ### Set ingress ip and port

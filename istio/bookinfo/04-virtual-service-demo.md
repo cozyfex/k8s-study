@@ -3,7 +3,7 @@
 ### Apply sample destination rule
 
 ```shell
-kubectl apply -f samples/bookinfo/networking/destination-rule-all.yaml
+kubectl apply -f istio/samples/bookinfo/networking/destination-rule-all.yaml
 ```
 
 ### Apply reviews virtual service

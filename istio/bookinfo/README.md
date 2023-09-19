@@ -1,6 +1,6 @@
 ## Istio study
 
-This is with bookinfo sample of [Istio Github](https://github.com/istio/istio).
+This is with bookinfo sample of [Istio GitHub](https://github.com/istio/istio).
 
 ## System Installation
 
@@ -13,7 +13,7 @@ istioctl install --set profile=demo
 ### Install Kiali, Grafana, Prometheus, Jagger, Loki
 
 ```shell
-kubectl apply -f samples/addons
+kubectl apply -f istio/samples/addons
 ```
 
 ### Useful commands
@@ -21,13 +21,13 @@ kubectl apply -f samples/addons
 #### Install bookinfo sample
 
 ```shell
-kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml
+kubectl apply -f istio/samples/bookinfo/platform/kube/bookinfo.yaml
 ```
 
 #### Cleanup bookfino sample
 
 ```shell
-./samples/bookinfo/platform/kube/cleanup.sh
+./istio/samples/bookinfo/platform/kube/cleanup.sh
 ```
 
 #### Execute a command in a container
@@ -46,5 +46,5 @@ while sleep 0.01;do curl -sS 'http://'"$INGRESS_HOST"':'"$INGRESS_PORT"'/product
 #### Apply sidecar
 
 ```shell
-kubectl apply -f <(istioctl kube-inject -f samples/httpbin/httpbin.yaml) -n bar
+kubectl apply -f <(istioctl kube-inject -f istio/samples/httpbin/httpbin.yaml) -n bar
 ```
